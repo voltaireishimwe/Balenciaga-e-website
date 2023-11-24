@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Starbucks</title>
+	<link rel="stylesheet" href="project.css">
+</head>
+<body>
+<section>
+	<div class="circle"></div>
+<header>
+	<a href="#" class="logo" class="logo"><img src="image/logo.png"></a>
+
+<ul>
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Menu</a></li>
+	<li><a href="#">In Store</a></li>
+	<li><a href="#">Contact</a></li>
+</ul>
+
+</header>
+<div class="content">
+	<div class="textBox">
+		<h2>Unlock your Shoes<br>It's<span>Balenciaga</span></h2>
+		<p>Balenciaga is a fashion house founded by Cristóbal Balenciaga, a Basque designer, born in the Basque Country, Spain. He had a reputation as a couturier of unbending standards and was referred to as "the master of us all" by Christian Dior. His bubble skirts and odd, feminine, yet ultra-modern shapes were trademarks of the house. The house of Balenciaga is now owned by the French multinational company PPR.</p>
+		<a href="#">Learn More</a>
+
+	</div>
+
+<div class="imgBox">
+		<img src="image/img1.png" class="starbucks">
+	</div>
+<ul class="thumb">
+	<li><img src="image/thumb1.png" onclick="imgSlider('image/img1.png');changeCircleColor('#017143')"></li>
+	<li><img src="image/thumb2.png" onclick="imgSlider('image/img2.png');changeCircleColor('#eb7495')"></li>
+	<li><img src="image/thumb3.png" onclick="imgSlider('image/img3.png');changeCircleColor('#d752b1')"></li>
+
+</ul>
+<ul class="sci">
+	<li><a href="#"><img src="image/facebook.png"></a></li>
+	<li><a href="#"><img src="image/twitter.png"></a></li>
+	<li><a href="#"><img src="image/instagram.png"></a></li>
+</ul>
+
+
+
+
+</section>
+
+<script type="text/javascript">
+	function imgSlider(anything) {
+		document.querySelector('.starbucks').src = anything;
+		// body...
+	}
+function changeCircleColor(color){
+	const circle=document.querySelector('.circle');
+	circle.style.background=color;
+}
+
+
+</script>
+
+
+
+
+
+	</body>
+</html>
